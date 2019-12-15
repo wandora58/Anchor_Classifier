@@ -7,4 +7,4 @@ Keras==2.2.4
 numpy==1.14.3
 tensorflow==1.10.1
 opencv-python==4.1.1.26
-Pillow==5.1.0
+Pillow==6.2.0
