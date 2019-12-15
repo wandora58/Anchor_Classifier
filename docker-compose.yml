@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  nginx:
+      image: nginx:1.13
+      ports:
+        - "80:8000"
+      volumes:
+        - ./nginx/conf:/etc/nginx/conf.d
+        - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+        - ./static:/static
+      depends_on:
+        - python
+  python:
+      build: ./python
+      command: uwsgi --socket :8001 --module anchor_classifier.wsgi --py-autoreload 1 --logto /tmp/mylog.log
+      volumes:
+        - ./src:/code
+        - ./static:/static
+      expose:
+        - "8001"

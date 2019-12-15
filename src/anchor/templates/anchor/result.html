@@ -1,0 +1,56 @@
+{% extends 'anchor/base.html' %}
+{% block title %}局アナ推定結果{% endblock %}
+
+{% block content %}
+<div class="mb-5">
+  <h4 class="mt-4 mb-5 border-bottom">局アナ推定結果</h4>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>ファイル名</td>
+        <td>{{ photo_name }}</td>
+      </tr>
+      <tr>
+        <td>画像ファイル</td>
+        <td><img class-'preview-img' src="{{ photo_data }}"></img></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>あなたにおすすめなテレビ局</th>
+        <th>{{ predicted }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>朝日テレビ</td>
+        <td>{{ Asahi }}</td>
+      </tr>
+      <tr>
+        <td>フジテレビ</td>
+        <td>{{ Fuji }}</td>
+      </tr>
+      <tr>
+        <td>日本テレビ</td>
+        <td>{{ Japan }}</td>
+      </tr>
+      <tr>
+        <td>NHK</td>
+        <td>{{ NHK }}</td>
+      </tr>
+      <tr>
+        <td>TBS</td>
+        <td>{{ TBS }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="{% url 'anchor:index' %}" class btn btn-primary>画像選択メニューに戻る</a>
+
+</div>
+
+{% endblock %}
