@@ -54,7 +54,7 @@ class Photo(models.Model):
                     img = img_numpy_bgr[y:y + height, x:x + width]
 
             else:
-                return None, 0
+                return None, None
 
             IMAGE_SIZE = 100
 
