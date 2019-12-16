@@ -12,4 +12,8 @@ curl -L https://github.com/docker/compose/releases/download/1.24.0/docker-compos
 chmod 0755 /usr/local/bin/docker-compose 
 Docker-compose -v  
 ```
-3. 
+3. Git clone
+```
+git clone https://github.com/wandora58/Anchor_Classifier
+cd Anchor_Classifier
+```
