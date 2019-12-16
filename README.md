@@ -24,4 +24,4 @@ http://localhost/anchor/
 ```
 
 ### Let's Start!
-When you enter your face image, this app will tell you the most recommended key station(```NHK``` , ```フジテレビ``` , ```朝日テレビ``` , ```TBS``` , ```日本テレビ```) 
+When you enter your face image, this app will tell you the most recommended key station(```NHK``` , ```フジテレビ``` , ```朝日テレビ``` , ```TBS``` , ```日本テレビ```) for you!!
